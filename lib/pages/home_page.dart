@@ -32,12 +32,6 @@ class _HomePageState extends State<HomePage> {
 //text controller
   final _controller = TextEditingController();
 
-// list of todo
-  // List toDoList = [
-  //   ["Make Tutorial", false],
-  //   ["Eaat good", false],
-  // ];
-
 // checkbox was tapped
   void checkBoxChanged(bool? value, int index) {
     setState(() {
@@ -53,7 +47,7 @@ class _HomePageState extends State<HomePage> {
       _controller.clear();
     });
     Navigator.of(context).pop();
-     db.updateDataBase();
+    db.updateDataBase();
   }
 
   // create new task
@@ -78,7 +72,7 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       db.toDoList.removeAt(index);
     });
-     db.updateDataBase();
+    db.updateDataBase();
   }
 
   @override
@@ -86,13 +80,16 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.yellow[200],
       appBar: AppBar(
-        backgroundColor: Colors.yellow,
-        title: const Text("To Do"),
+        backgroundColor: Colors.yellow[400],
+        title: const Text(
+          "Your Tasks",
+          style: TextStyle(fontSize: 24),
+        ),
         centerTitle: true,
         elevation: 0,
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.yellow,
+        backgroundColor: Colors.yellow[400],
         onPressed: createNewTask,
         child: const Icon(Icons.add),
       ),

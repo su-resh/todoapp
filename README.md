@@ -1,16 +1,37 @@
-# todo
+# Todo Application with Hive Storage
 
-A new Flutter project.
+## Features
+- **Add tasks:** Easily add tasks to your to-do list.
+- **Remove tasks:** Remove tasks that are no longer needed.
+- **Mark tasks as completed:** Keep track of your progress by marking tasks as completed.
+- **Data persistence:** Store tasks locally using Hive storage.
 
-## Getting Started
+## Installation
+1. Clone the repository to your local machine.
+2. Ensure you have Flutter installed. If not, follow the instructions at [Flutter Installation Guide](https://flutter.dev/docs/get-started/install) to install Flutter.
+3. Navigate to the project directory.
+4. Run `flutter pub get` to install dependencies.
+5. Ensure you have Hive and path_provider dependencies added to your `pubspec.yaml` file.
 
-This project is a starting point for a Flutter application.
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  hive: ^2.0.0
+  hive_flutter: ^1.1.0
+  path_provider: ^2.0.2
+```
 
-A few resources to get you started if this is your first Flutter project:
+## Usage
+1. Run the application on an emulator or physical device using `flutter run`.
+2. Use the interface to add, remove, and mark tasks as completed. Your tasks will be stored locally using Hive storage.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Technologies Used
+- Flutter
+- Hive
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Contributors
+- Suresh Subedi
+
+## License
+Free to use. This is a learning application.

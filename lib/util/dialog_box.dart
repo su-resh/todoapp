@@ -28,7 +28,7 @@ class DialogBox extends StatelessWidget {
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),
-                hintStyle: const TextStyle(color: Colors.black),
+                hintStyle: const TextStyle(color: Color.fromARGB(255, 92, 91, 91)),
               ),
             ),
 
