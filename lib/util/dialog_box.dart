@@ -16,7 +16,7 @@ class DialogBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return AlertDialog(
       backgroundColor: Colors.yellow[300],
-      content: Container(
+      content: SizedBox(
         height: 120,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -28,7 +28,7 @@ class DialogBox extends StatelessWidget {
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),
-                hintStyle: TextStyle(color: Colors.black),
+                hintStyle: const TextStyle(color: Colors.black),
               ),
             ),
 
