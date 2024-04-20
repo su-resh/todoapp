@@ -31,7 +31,7 @@ dependencies:
 - Hive
 
 ## Contributors
-- Suresh Subedi
+- [Suresh Subedi](https://github.com/su-resh)
 
 ## License
 Free to use. This is a learning application.
