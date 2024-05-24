@@ -83,7 +83,8 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.yellow[400],
         title: const Text(
           "Your Tasks",
-          style: TextStyle(fontSize: 24),
+          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
+
         ),
         centerTitle: true,
         elevation: 0,
