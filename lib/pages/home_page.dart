@@ -82,9 +82,8 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         backgroundColor: Colors.yellow[400],
         title: const Text(
-          "Your Tasks",
-          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
-
+          "Todo List",
+          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
         elevation: 0,

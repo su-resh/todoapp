@@ -8,12 +8,12 @@ class ToDoTile extends StatelessWidget {
   final void Function(BuildContext)? deleteFunction;
 
   const ToDoTile({
-    super.key,
+    Key? key,
     required this.taskName,
     required this.taskCompleted,
     required this.onChanged,
     required this.deleteFunction,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -32,27 +32,32 @@ class ToDoTile extends StatelessWidget {
           ],
         ),
         child: Container(
-          padding: const EdgeInsets.all(24),
+          padding: const EdgeInsets.all(16),
           decoration: BoxDecoration(
             color: Colors.yellow,
             borderRadius: BorderRadius.circular(12),
           ),
           child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              //checkbox
               Checkbox(
                 value: taskCompleted,
                 onChanged: onChanged,
                 activeColor: Colors.black,
               ),
-              // task name
-              Text(
-                taskName,
-                style: TextStyle(
+              SizedBox(width: 16),
+              Expanded(
+                child: Text(
+                  taskName,
+                  style: TextStyle(
                     fontSize: 18,
                     decoration: taskCompleted
                         ? TextDecoration.lineThrough
-                        : TextDecoration.none),
+                        : TextDecoration.none,
+                  ),
+                  maxLines: 2, // Allow up to 2 lines of text
+                  overflow: TextOverflow.ellipsis,
+                ),
               ),
             ],
           ),
